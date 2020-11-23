@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
+
 html{
     /* prevent adding extra height or weight to the page */
     box-sizing: border-box;
@@ -5,4 +7,56 @@ html{
 body{
     margin: 0;
     min-height: 100vh;
+    font-family: 'Big Shoulders Inline Display', cursive, sans-serif;
+    background: whitesmoke;
+}
+
+h1{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+/* Loader */
+
+.loader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* center de image in the middle of the page */
+.loader img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+/* Image Container */
+.image-container{
+    margin: 10px 30%;
+}
+
+.image-container img {
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+
+/* Media Query: Large Smartphone */
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 30px;
+    }
+    .image-container{
+        margin: 10px;
+    }
+
 }
